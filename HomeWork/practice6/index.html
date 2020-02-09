@@ -131,19 +131,21 @@
       // console.log(value2);
 
       // ________________________________________________________________________________________________task 7
-      // _________________________________________________________________________не виходить div вкласти в main
 
-      // let div = document.createElement("div");
+      
+      
+      let main = document.createElement("main");
+      main.setAttribute("class", "mainClass check item");
+      document.body.prepend(main);
+      console.log(main);
 
-      // div.setAttribute("id", "myDiv");
-      // document.body.prepend(div);
+      let div = document.createElement("div");
+      div.setAttribute("id", "myDiv");
+      document.body.firstChild.prepend(div);
+      console.log(div);
 
-      // let main = document.createElement("main");
-
-      // main.setAttribute("class", "mainClass check item");
-      // document.body.prepend(main);
-
-      // div.insertAdjacentHTML("beforeend", "<p>First paragraph</p>");
+      div.insertAdjacentHTML("afterbegin", "<p>First paragraph</p>");
+      
     </script>
   </body>
 </html>
