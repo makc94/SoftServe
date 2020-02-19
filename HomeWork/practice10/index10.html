@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //                                                                                                                  task_1
+      // let arr = ["Tom", "Sam", "Ray", "Bob"];
+      // let [x, y, ,...z] = arr;
+      // console.log(x); // "Tom"
+      // console.log(y); // "Sam"
+      // console.log(z); // [Bob]
+
+      //                                                                                                                  task_2
+      // let data = {
+      // names: ["Sam", "Tom", "Ray", "Bob"],
+      // ages: [20, 24, 22, 26],
+      // };
+      // let { names: [name1, name2, name3, name4],
+      //     ages: [age1, age2, age3, age4] } = data;
+      // console.log(name2); // "Tom"
+      // console.log(age2); // 24
+      // console.log(name4); // "Bob"
+      // console.log(age4); // 26
+
+      //                                                                                                                   task_3
+      // function mul(...data) {
+      //   let n = {
+      //     number: []
+      //   };
+      //   for (let i = 0; i < data.length; i++) {
+      //     if (typeof data[i] == "number") {
+      //       n.number.push(data[i]);
+      //     } else {
+      //       console.log("It's not a number!");
+      //     }
+      //   }
+      //   let sum = 0;
+      //   for (let w = 0; w < n.number.length; w++) {
+      //     sum += n.number[w];
+      //   }
+      //   console.log(sum);
+      // }
+
+      // console.log(mul(84, "str", 2, 3, true));
+      // console.log(mul(null, "str", false, true));
+
+      //                                                          не до кінця                 task_4
+      // let server = {
+      //   data: 0,
+      //   convertToString: callback => {
+      //     callback(() => {
+      //       this.data + "";
+      //     });
+      //   }
+      // };
+      // let client = {
+      //   server: server,
+      //   result: "",
+      //   calc: function(data) {
+      //     server.data = data;
+      //     server.convertToString(this.notification());
+      //   },
+      //   notification: () => {
+      //     return function(callback) {
+      //       this.result = callback();
+      //     };
+      //   }
+      // };
+      // client.calc(123);
+      // console.log(client.result); // "123"
+      // console.log(typeof client.result); // "string"
+
+      //                                                   не зроблено                  task_5
+      function mapBuilder(keys, values) {
+        let map = new Map(keys, values);
+        map.forEach((keys, values) => {
+          alert(`${keys}: ${values}`);
+        });
+      }
+
+      let keys = [1, 2, 3, 4];
+      let values = ["div", "span", "b", "i"];
+      let map = mapBuilder(keys, values);
+
+      // console.log(map.size); // 4
+      // console.log(map.get(2)); // "span"
+    </script>
+  </body>
+</html>
