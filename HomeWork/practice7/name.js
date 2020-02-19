@@ -88,3 +88,41 @@
 // let x = document.getElementById("country")[0][0];
 // console.log(x);
 // x.addEventListener("click", ukraine);
+
+
+
+
+
+
+===========================================task_7
+let ukr = ["Lviv", "Kyiv", "Odesa", "Kharkiv"];
+let usa = ["Washington", "New York", "Chicago", "Dallas"];
+let germany = ["Berlin", "Frankfurt", "Hannover", "Bonn"];
+
+function show_cities() {
+  let city = document.getElementById("2");
+  city.innerHTML = "";
+  let country = [];
+  if (this.value == "1") {
+    country = ukr;
+  } else if (this.value == "2") {
+    country = usa;
+  } else if (this.value == "3") {
+    country = germany;
+  }
+  for (let i = 0; i < country.length; i++) {
+    let option = document.createElement("option");
+    option.value = i + 1;
+    let textNode = document.createTextNode(country[i]);
+    option.appendChild(textNode);
+    city.appendChild(option);
+  }
+}
+
+function write() {
+  console.log(this.value)
+}
+
+document.getElementById("1").addEventListener("change", show_cities);
+document.getElementById("1").addEventListener("change", write);
+
