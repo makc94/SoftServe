@@ -82,19 +82,10 @@
 // window.addEventListener("resize", sizesize);
 
 // ==================================================================================================task_7
-// function ukraine() {
-//   console.log("hi");
-// }
-// let x = document.getElementById("country")[0][0];
-// console.log(x);
-// x.addEventListener("click", ukraine);
 
 
 
 
-
-
-===========================================task_7
 let ukr = ["Lviv", "Kyiv", "Odesa", "Kharkiv"];
 let usa = ["Washington", "New York", "Chicago", "Dallas"];
 let germany = ["Berlin", "Frankfurt", "Hannover", "Bonn"];
