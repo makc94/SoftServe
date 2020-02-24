@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Пошук роботи</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="gradient" name="test" method="post">
+      <h1>Форма пошуку роботи!</h1>
+      <p>
+        Ваше ім'я:
+        <input class="one" id="name" type="text" size="40" />
+      </p>
+
+      <p>
+        Ваше прізвище:
+        <input class="one" id="last_name" type="text" size="40" />
+      </p>
+
+      <p>
+        Ваш вік:
+        <input class="one" id="age" type="text" size="40" />
+      </p>
+
+      <label for="education">Виберіть Вашу освіту:</label>
+      <select class="one" id="education">
+        <option value="Початкова загальна">Початкова загальна</option>
+        <option value="Базова загальна середня освіта"
+          >Базова загальна середня освіта</option
+        >
+        <option value="Повна загальна середня">Повна загальна середня</option>
+        <option value="Професійно-технічна освіта"
+          >Професійно-технічна освіта</option
+        >
+        <option value="Базова вища освіта">Базова вища освіта</option>
+        <option value="Повна вища освіта">Повна вища освіта</option>
+      </select>
+
+      <p>
+        Ваша бажана посада:
+        <input class="one" id="position" type="text" size="40" />
+      </p>
+
+      <button id="send">Відправити</button>
+      <button id="check">Перевірка з'єднання з інтернетом!</button>
+      <button id="clear">Очистка з localStorage</button>
+    </form>
+
+    <script src="work.js"></script>
+  </body>
+</html>
