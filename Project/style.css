@@ -1,0 +1,61 @@
+form {
+  width: 510px;
+  padding: 12px 20px;
+  border: 2px solid;
+  position: absolute;
+  left: 25%;
+  top: 10%;
+  border-radius: 10px;
+  box-shadow: 0 0 7px 3px #24e4aa;
+  margin: 20px auto;
+}
+
+body {
+  background-image: url("everest.jpg");
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font: 35px Calibri;
+  text-shadow: 2px 1px 0px #24e4aa, 7px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+input {
+  position: inherit;
+  text-indent: 6px;
+}
+
+.one {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 500px;
+  border-radius: 15px;
+}
+
+p,
+label {
+  font: 14px Verdana;
+}
+
+button#send {
+  background-color: rgb(76, 212, 138);
+  border-radius: 15px;
+  border-color: white;
+}
+
+button#clear {
+  background-color: rgb(236, 70, 70);
+  border-radius: 15px;
+  border-color: white;
+}
+
+button#check {
+  padding-right: 30px;
+  display: inline-block;
+  margin: 4px 2px;
+  border-radius: 15px;
+  background-color: darkturquoise;
+  border-color: white;
+}
